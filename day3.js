@@ -1,7 +1,4 @@
-
-
-
-let nameArray = [ ["nisha", 22] ,["hiren" , 27] ,["anand" , 31]];
+/*let nameArray = [ ["nisha", 22] ,["hiren" , 27] ,["anand" , 31]];
 nameArray.removedfromnameArray = nameArray.pop();  //remove last elelment of array
 //nameArray.pop(); 
 nameArray.shiftfromnameArray = nameArray.shift();  //remove first element of array
@@ -99,23 +96,132 @@ console.log("after" + JSON.stringify(array));
 
 
 
+function testBoolian(isthattrue)
+{
+     if(testBoolian==true)
+     {
+         return "yes,it is true";
+     }
+    return "no,it is false";
+}
+testBoolian(false);
 
 
 
+function compareequality(a,b)
+{
+    if(a==b)   // answer : equal (type conversion string into number)
+    //if(a===b)  // answer : not equal (not converting type),strict equality operator
+    {
+        return "equal";
+    }
+    return "not equal";
+}
+compareequality(10 , "10");
+
+
+function notequal(val)
+{
+    if(val>100)
+    {
+        return "over 100";
+    }
+    if(val>10)
+    {
+    return "over 10";
+    }
+    return "10 or under 10";
+}
+ console.log(notequal(10)); 
+
+
+ function logicaland(value)
+{
+    if(value<=100 && value>=25)  //logical-and (answer-no)
+     //if(value<=100 || value>=25)  //logical-or  (answer-yes)
+    {
+        return "yes";
+    }
+    
+    return "no";
+}
+ console.log(logicaland(10));
+ 
+ 
+ function ifelsecheck(value)
+ {
+     if(value>5)
+     {
+        result = "value is bigger than 5";
+     }
+     else
+     {
+        result = "value is lesser than 5";
+     }
+     return result;
+ }
+  ifelsecheck(6);
 
 
 
+ 
+  function elseifcheck(value)
+  {
+      if(value>10)
+      {
+         return "value is greater than 10";
+      }
+      else if(value<5)
+      {
+         return "value is less than 5";
+      }
+      else
+      {
+         return "value between 5 and 10"
+      }
+      
+  }
+  elseifcheck(7);          */
 
+//let golfnames = ["par3","par2","par1","par","par1p","par2p","go home"];
 
+function switchincase(val) {
+  var answer = "";
+  switch (val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+    case 5:
+    case 6:
+    case 7:
+      answer = "delta2"; //multiple case have same answer
+      break;
+    default:
+      //default in  switch statement
+      answer = "anything";
+      break;
+  }
+  return answer;
+}
+console.log(switchincase(3)); //ans: gamma
 
+function isless(a, b) {
+  return a < b; //direcr return instead using if statement
+}
+console.log(isless(6, 7));
 
-
-
-
-
-
-
-
-
-
-
+var myAraay = [];
+var i = 0;
+while (i < 5) {
+  myAraay.push();
+}
+console.log(myAraay);
